@@ -5,7 +5,7 @@ using namespace std;
 // Making a new struct for our complex numbers
 typedef struct 
 {
-    int a;
+    float a;
     char g;
     string b;
 }
@@ -27,7 +27,7 @@ int main(){
         a.g = '-';
         a.b.erase(0, 1);
     }
-    int e = stoi(a.b);
+    float e = stof(a.b);
     cout << "Enter your second complex number: " << endl;
     cin >> b.a >> b.g>> b.b;
     b.b.erase(b.b.length()-1,b.b.length());
@@ -40,7 +40,7 @@ int main(){
         b.g = '-';
         b.b.erase(0, 1);
     }
-    int f = stoi(b.b);
+    float f = stof(b.b);
     cout << "We got: "<< a.a+b.a <<" "<< check(f) << " " << bind(a.b, a.g, b.b, b.g) << 'i'<< endl;
 
 
