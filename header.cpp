@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 using namespace std;
-int change(float a, char op, float b){
+float change(float a, char op, float b){
     if (op == '+'){
         return a+b;
     }

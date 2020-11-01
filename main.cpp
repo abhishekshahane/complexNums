@@ -22,11 +22,11 @@ int main(){
         a.g = '+';
         a.b.erase(0,1);
     }
-    else if (a.b.at(0) != '+' or a.b.at(0)!='-'){}
-    else{
+    else if(a.b.at(0) == '+' || a.b.at(0)=='-'){
         a.g = '-';
         a.b.erase(0, 1);
     }
+    else{}
     float e = stof(a.b);
     cout << "Enter your second complex number: " << endl;
     cin >> b.a >> b.g>> b.b;
@@ -35,11 +35,11 @@ int main(){
         b.g = '+';
         b.b.erase(0,1);
     }
-    else if (b.b.at(0) != '+' or b.b.at(0)!='-'){}
-    else{
+    else if(b.b.at(0) == '+' || b.b.at(0)=='-'){
         b.g = '-';
         b.b.erase(0, 1);
     }
+    else{}
     float f = stof(b.b);
     cout << "We got: "<< a.a+b.a <<" "<< check(f) << " " << bind(a.b, a.g, b.b, b.g) << 'i'<< endl;
 
